@@ -1,0 +1,9 @@
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - htslib=1.9
+  - samtools
+  - bcftools
+  - pysam
+  - bedtools
