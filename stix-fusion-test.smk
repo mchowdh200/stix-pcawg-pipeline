@@ -7,14 +7,14 @@ import pandas as pd
 
 ## UTILITY FUNCTIONS ===========================================================
 def nested_dict_to_namespace(d: dict) -> SimpleNamespace:
-    """Converts a nested dict to a SimpleNamespace"""
-    namespace = SimpleNamespace(**d) # top level namespace
+  """Converts a nested dict to a SimpleNamespace"""
+  namespace = SimpleNamespace(**d) # top level namespace
 
-    # recursively convert sub-dicts to SimpleNamespaces
-    for key, value in d.items():
-      if isinstance(value, dict):
-        setattr(namespace, key, nested_dict_to_namespace(value))
-    return namespace
+  # recursively convert sub-dicts to SimpleNamespaces
+  for key, value in d.items():
+    if isinstance(value, dict):
+      setattr(namespace, key, nested_dict_to_namespace(value))
+  return namespace
 
 ## SETUP ======================================================================
 
