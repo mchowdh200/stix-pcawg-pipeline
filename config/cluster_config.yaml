@@ -1,0 +1,9 @@
+__default__:
+  job-name: "{rule}"
+  partition: short
+  time: 30 # minutes
+  nodes: 1
+  ntasks: 1
+  mem: 16gb
+  output: "logs/{rule}-%j.out"
+  error: "logs/{rule}-%j.err"

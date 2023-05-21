@@ -1,17 +1,26 @@
-# where do results go?
-outdir: '/mnt/local/data'
-
-# manifest for downloading cancer bams from the ICGC data portal
-manifest: '/home/ubuntu/icgc-data/data_listings/donor_manifest_reduced.tsv'
-
-
-# the table generated from the ICGC data portal query
-donor_table: '/home/ubuntu/icgc-data/data_listings/donor_table.tsv'
-
-# maybe put this into a rule somehow instead of just including it raw.
-sample_names: '/home/ubuntu/icgc-data/data_listings/sample_names.txt'
-
+# config for excording icgc bams ----------------------------------------------
 # TODO add an item for downloading a score-client config file that is on s3
 # so that I don't have to copy paste the key anymore. It'll still be secure
 # since you need the aws secret key to download it.
 # TODO we can make a snakemake rule to download it to the correct area
+icgc_excord:
+  # where do results go?
+  outdir: '/mnt/local/data'
+
+  # manifest for downloading cancer bams from the ICGC data portal
+  manifest: '/home/ubuntu/icgc-data/data_listings/donor_manifest_reduced.tsv'
+
+  # the table generated from the ICGC data portal query
+  donor_table: '/home/ubuntu/icgc-data/data_listings/donor_table.tsv'
+
+  # maybe put this into a rule somehow instead of just including it raw.
+  sample_names: '/home/ubuntu/icgc-data/data_listings/sample_names.txt'
+
+
+# Params for stix fusion testing ----------------------------------------------
+fusion_test:
+  outdir:     'output_path'
+  genes:      'path_to_genes_bed'
+  1kg_index:  'path_to_index'
+  1kg_ped_db: 'path_to_ped_db'
+

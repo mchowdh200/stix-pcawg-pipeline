@@ -3,81 +3,77 @@ Simple stix pipeline to test STIX fusion idea
 """
 
 from types import SimpleNamespace
+import pandas as pd
+
+## UTILITY FUNCTIONS ===========================================================
+def nested_dict_to_namespace(d: dict) -> SimpleNamespace:
+    """Converts a nested dict to a SimpleNamespace"""
+    namespace = SimpleNamespace(**d) # top level namespace
+
+    # recursively convert sub-dicts to SimpleNamespaces
+    for key, value in d.items():
+        if isinstance(value, dict):
+            setattr(namespace, key, nested_dict_to_namespace(value))
+    return namespace
+
+## SETUP ======================================================================
 
 configfile: 'config/config.yaml'
-config = SimpleNamespace(**config)
+config = nested_dict_to_namespace(configfile).fusion_test # pipeline subconfig
 
+# table of protein coding gene regions
+genes_bed = pd.read_csv(
+    config.genes,
+    sep="\t",
+    names=["chr", "start", "end", "name", "strand"],
+)
+# list of gene names to use as wildcard in rules
+genes = genes_bed["name"].tolist()
+
+
+## RULES ======================================================================
 rule All:
-  pass
+  input:
+      expand(f'{config.outdir}/1kg_queries/{gene}.txt', gene=genes),
+
+rule STIX1kgGeneQuery:
+  """
+  Given a particular gene, query the 1kg STIX index
+  Let the left and right intervals be the whole gene
+  """
+  input:
+    index = config.1kg_index,
+    ped_db = config.1kg_ped_db,
+  params:
+    gene = '{gene}',
+    chrom = genes_bed[genes_bed['name'] == '{gene}']['chr'].values[0],
+    start = genes_bed[genes_bed['name'] == '{gene}']['start'].values[0],
+    end = genes_bed[genes_bed['name'] == '{gene}']['end'].values[0],
+  output:
+    f'{config.outdir}/1kg_queries/{gene}.txt'
+  threads:
+    1
+  shell:
+    f"""
+    bash scripts/stix_query.sh \\
+    -i {{input.index}} \\
+    -d {{input.ped_db}} \\
+    -l {{params.chrom}}:{{params.start}}-{{params.end}} \\
+    -r {{params.chrom}}:{{params.start}}-{{params.end}} \\
+    -o {{output}}
+    """
+
+
+
 
 rule STIXFilter1kg:
-  """
-  Query the 1kg STIX index using the genes list as the query regions
-
-  Procedure:
-    for each gene:
-      let left interval be whole gene
-      let right interval be whole gene
-      make stix query
-      filter out gene if > than some threshold of hits (start with >1)
-  """
-  output:
-    f'{config.outdir}/1kg_filtered/1kg_filtered_genes.bed'
-  threads:
-    workflow.cores
-  shell:
-    # TODO nail down all the files needed for stix query
-    # then modify args here as necessary
-    f"""bash scripts/stix_filter.sh \\
-    --genes {config.genes} \\
-    --giggle_index {config.1kg_giggle} \\
-    --stix_index {config.1kg_stix} \\
-    --threshold {config.1kg_filter_threshold} \\
-    --out {{output}} \\
-    --processes {{threads}}
-    """
+  pass
 
 rule PairwiseGeneSTIXQueries:
-  """
-  Query the STIX index using the genes list as the query regions
-  in the tumor index
-  Procedure:
-    for each pair of genes:
-      let left interval be whole gene[0]
-      let right interval be whole gene[1]
-      make stix query
-      report pair of genes along with number of hits from query
-  """
-  input:
-    rules.STIXFilter1kg.output.genes
-  output:
-    f'{config.outdir}/pairwise_genes_queries/pairwise_genes_queries.txt'
-  threads:
-    workflow.cores
-  shell:
-    f"""
-    bash scripts/stix_pairwise_query.sh \\
-    --genes {{input}} \\
-    --giggle_index {config.tumor_giggle} \\
-    --stix_index {config.tumor_stix} \\
-    --out {{output}} \\
-    --processes {{threads}}
-    """
+  pass
 
 rule RankPairs
-  """
-  Rank the pairs of genes by the number of hits from the STIX query
-  """
-  input:
-    rules.PairwiseGeneSTIXQueries.output
-  output:
-    f'{config.outdir}/ranked_pairs/ranked_pairs.txt'
-  shell:
-    f"""
-    bash scripts/rank_pairs.sh \\
-    --pairs {{input}} \\
-    --out {{output}}
-    """
+  pass
 
 
 
