@@ -34,7 +34,7 @@ genes = genes_bed["name"].tolist()
 ## RULES ======================================================================
 rule All:
   input:
-      expand(f'{config.outdir}/1kg_queries/{gene}.txt', gene=genes),
+      expand(f'{config.outdir}/1kg_queries/{{gene}}.txt', gene=genes),
 
 rule STIX1kgGeneQuery:
   """
