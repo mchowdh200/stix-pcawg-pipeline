@@ -34,7 +34,7 @@ genes = genes_bed["name"].tolist()
 ## RULES ======================================================================
 rule All:
   input:
-      expand(f'{config.outdir}/1kg_queries/{{gene}}.txt', gene=genes),
+      expand(f'{config.outdir}/1kg_queries/{{gene}}.txt', gene=genes)
 
 rule STIX1kgGeneQuery:
   """
@@ -43,12 +43,12 @@ rule STIX1kgGeneQuery:
   """
   input:
     index = config.1kg_index,
-    ped_db = config.1kg_ped_db,
+    ped_db = config.1kg_ped_db
   params:
     gene = '{gene}',
     chrom = lambda w: genes_bed[genes_bed['name'] == w.gene]['chr'].values[0],
     start = lambda w: genes_bed[genes_bed['name'] == w.gene]['start'].values[0],
-    end = lambda w: genes_bed[genes_bed['name'] == w.gene]['end'].values[0],
+    end = lambda w: genes_bed[genes_bed['name'] == w.gene]['end'].values[0]
   output:
     f'{config.outdir}/1kg_queries/{wildcards.gene}.txt'
 
