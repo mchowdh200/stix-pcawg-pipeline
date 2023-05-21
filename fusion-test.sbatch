@@ -3,7 +3,7 @@
 #SBATCH -p long
 #SBATCH --job-name=fusion-test
 #SBATCH --nodes=1
-#SBATCH --ntasks=128
+#SBATCH --ntasks=64
 #SBATCH --mem=1G
 #SBATCH --time=168:00:00
 #SBATCH --output=logs/fusion-test.out
