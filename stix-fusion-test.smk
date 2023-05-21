@@ -50,9 +50,7 @@ rule STIX1kgGeneQuery:
     start = genes_bed[genes_bed['name'] == '{gene}']['start'].values[0],
     end = genes_bed[genes_bed['name'] == '{gene}']['end'].values[0],
   output:
-    f'{config.outdir}/1kg_queries/{{gene}}.txt',
-  threads:
-    1
+    f'{config.outdir}/1kg_queries/{{gene}}.txt'
   shell:
     f"""
     bash scripts/stix_query.sh \\
