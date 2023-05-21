@@ -66,14 +66,14 @@ rule STIX1kgGeneQuery:
 
 
 
-rule STIXFilter1kg:
-  pass
+# rule STIXFilter1kg:
+#   pass
 
-rule PairwiseGeneSTIXQueries:
-  pass
+# rule PairwiseGeneSTIXQueries:
+#   pass
 
-rule RankPairs
-  pass
+# rule RankPairs
+#   pass
 
 
 
