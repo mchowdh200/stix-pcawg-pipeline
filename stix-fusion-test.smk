@@ -12,8 +12,8 @@ def nested_dict_to_namespace(d: dict) -> SimpleNamespace:
 
     # recursively convert sub-dicts to SimpleNamespaces
     for key, value in d.items():
-        if isinstance(value, dict):
-            setattr(namespace, key, nested_dict_to_namespace(value))
+      if isinstance(value, dict):
+        setattr(namespace, key, nested_dict_to_namespace(value))
     return namespace
 
 ## SETUP ======================================================================
@@ -23,9 +23,9 @@ config = nested_dict_to_namespace(configfile).fusion_test # pipeline subconfig
 
 # table of protein coding gene regions
 genes_bed = pd.read_csv(
-    config.genes,
-    sep="\t",
-    names=["chr", "start", "end", "name", "strand"],
+  config.genes,
+  sep="\t",
+  names=["chr", "start", "end", "name", "strand"],
 )
 # list of gene names to use as wildcard in rules
 genes = genes_bed["name"].tolist()
@@ -34,7 +34,7 @@ genes = genes_bed["name"].tolist()
 ## RULES ======================================================================
 rule All:
   input:
-      expand(f'{config.outdir}/1kg_queries/{{gene}}.txt', gene=genes)
+    expand(f'{config.outdir}/1kg_queries/{{gene}}.txt', gene=genes)
 
 rule STIX1kgGeneQuery:
   """
