@@ -58,7 +58,7 @@ rule STIX1kgGeneQuery:
     -d {{input.ped_db}} \\
     -l {{params.chrom}}:{{params.start}}-{{params.end}} \\
     -r {{params.chrom}}:{{params.start}}-{{params.end}} \\
-    -T DEL \\
+    -t DEL \\
     -o {{output}}
     """
 
