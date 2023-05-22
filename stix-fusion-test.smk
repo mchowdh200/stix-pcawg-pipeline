@@ -45,10 +45,9 @@ rule STIX1kgGeneQuery:
     index = config.onekg_index,
     ped_db = config.onekg_ped_db
   params:
-    gene = '{gene}',
-    chrom = genes_bed[genes_bed['name'] == '{gene}']['chr'].values,
-    start = genes_bed[genes_bed['name'] == '{gene}']['start'].values,
-    end = genes_bed[genes_bed['name'] == '{gene}']['end'].values
+    chrom = lambda w: genes_bed[genes_bed['name'] == w.gene]['chr'].values[0],
+    start = lambda w: genes_bed[genes_bed['name'] == w.gene]['start'].values[0],
+    end =   lambda w: genes_bed[genes_bed['name'] == w.gene]['end'].values[0],
   output:
     f'{config.outdir}/1kg_queries/{{gene}}.txt'
 
