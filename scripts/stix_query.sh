@@ -17,7 +17,7 @@ function usage {
 }
 
 
-while getopts ":i:d:l:r:o:" opt; do
+while getopts ":i:d:l:r:t:o:" opt; do
   case $opt in
     i) index="$OPTARG"
     ;;
