@@ -19,7 +19,7 @@ def nested_dict_to_namespace(d: dict) -> SimpleNamespace:
 ## SETUP ======================================================================
 
 configfile: 'config/config.yaml'
-config = nested_dict_to_namespace(configfile).fusion_test # pipeline subconfig
+config = nested_dict_to_namespace(config).fusion_test # pipeline subconfig
 
 # table of protein coding gene regions
 genes_bed = pd.read_csv(
