@@ -49,13 +49,11 @@ done
 index_dir=$(dirname "${index}")
 cd "${index_dir}"
 
-stix -s 500 \
+stix -s 500 ${svtype} \
     -i $(basename "${index}") \
     -d $(basename "${ped_db}") \
     -l "${left}" \
-    -r "${right}" \
-    ${svtype} \
-    > "${out}"
+    -r "${right}" > "${out}"
 
 
 
