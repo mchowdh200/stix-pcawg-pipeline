@@ -21,6 +21,6 @@ icgc_excord:
 fusion_test:
   outdir:     'output_path'
   genes:      'path_to_genes_bed'
-  1kg_index:  'path_to_index'
-  1kg_ped_db: 'path_to_ped_db'
+  onekg_index:  'path_to_index'
+  onekg_ped_db: 'path_to_ped_db'
 
