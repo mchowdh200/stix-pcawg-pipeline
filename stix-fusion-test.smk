@@ -50,7 +50,7 @@ rule STIX1kgGeneQuery:
     start = genes_bed[genes_bed['name'] == '{gene}']['start'].values,
     end = genes_bed[genes_bed['name'] == '{gene}']['end'].values
   output:
-    f'{config.outdir}/1kg_queries/{gene}.txt'
+    f'{config.outdir}/1kg_queries/{{gene}}.txt'
 
   shell:
     f"""
