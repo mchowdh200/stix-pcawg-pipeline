@@ -12,7 +12,7 @@
 
 
 mkdir -p logs
-snakemake -j 128 -c 64 \
+snakemake -j 128 -c 1 \
     --latency-wait 5 \
     -s stix-fusion-test.smk \
     --cluster-config config/cluster_config.yaml \
