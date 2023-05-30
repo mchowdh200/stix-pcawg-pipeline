@@ -2,7 +2,7 @@
 
 set exuo pipefail
 
-
+export DEBIAN_FRONTEND=noninteractive
 ### some common dependencies
 ### could probably pare it down a bit
 ################################################################################
