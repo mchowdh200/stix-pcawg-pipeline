@@ -3,7 +3,7 @@
 # so that I don't have to copy paste the key anymore. It'll still be secure
 # since you need the aws secret key to download it.
 # TODO we can make a snakemake rule to download it to the correct area
-icgc_excord:
+excord_config:
   # where do results go?
   outdir: '/mnt/local/data'
 
