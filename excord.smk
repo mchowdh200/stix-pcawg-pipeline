@@ -4,7 +4,7 @@ import pandas as pd
 from types import SimpleNamespace
 
 
-## UTILITY FUNCTIONS ===========================================================
+## SETUP ======================================================================
 def nested_dict_to_namespace(d: dict) -> SimpleNamespace:
   """Converts a nested dict to a SimpleNamespace"""
   namespace = SimpleNamespace(**d) # top level namespace
@@ -15,8 +15,19 @@ def nested_dict_to_namespace(d: dict) -> SimpleNamespace:
       setattr(namespace, key, nested_dict_to_namespace(value))
   return namespace
 
+
 configfile: 'config/config.yaml'
 config = nested_dict_to_namespace(config).excord_config
+
+manifest_table = pd.read_csv(config.manifest, sep='\t')
+file_ids = manifest_table['file_id'].tolist()
+
+
+## Rules ======================================================================
+rule All:
+  input:
+    expand(f'{config.outdir}/excord/{{file_id}}.excord.bed.gz', file_id=file_ids)
+
 
 # NOTE: need to export AWS keys in terminal before running snakemake
 rule GetReference:
