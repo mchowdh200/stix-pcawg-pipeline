@@ -80,7 +80,7 @@ rule RunExcord:
     bai = f'{bam}.bai'
 
     # run excord
-    shell(f"bash excord_cmd.sh {bam} {input.fasta} {output}")
+    shell(f"bash scripts/excord_cmd.sh {bam} {input.fasta} {output}")
 
     # remove the bams when done
     Path(bam).unlink()
