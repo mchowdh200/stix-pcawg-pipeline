@@ -1,5 +1,5 @@
 #!/bin/env bash
-set -eo pipefail
+set -o pipefail
 
 bam=$1
 fasta=$2
