@@ -91,7 +91,7 @@ chmod +x /mnt/local/bin/gargs
 wget -O score-client.tar.gz https://artifacts.oicr.on.ca/artifactory/dcc-release/bio/overture/score-client/[RELEASE]/score-client-[RELEASE]-dist.tar.gz
 mkdir score-client &&
     tar -xvzf score-client.tar.gz -C score-client --strip-components 1
-echo 'PATH=$PATH:~/icgc-data/score-client/bin' >> ~/.profile
+echo 'PATH=$PATH:~/stix-pcawg-pipeline/scripts/score-client/bin' >> ~/.profile
 
 ### TODO install giggle/stix?
 # probably dont need to do that on ec2 once we've gotten the excord data
