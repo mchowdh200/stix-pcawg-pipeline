@@ -93,5 +93,26 @@ mkdir score-client &&
     tar -xvzf score-client.tar.gz -C score-client --strip-components 1
 echo 'PATH=$PATH:~/stix-pcawg-pipeline/scripts/score-client/bin' >> ~/.profile
 
-### TODO install giggle/stix?
-# probably dont need to do that on ec2 once we've gotten the excord data
+### install excord
+################################################################################
+wget -O ~/bin/excord https://github.com/brentp/excord/releases/download/v0.2.4/excord
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
