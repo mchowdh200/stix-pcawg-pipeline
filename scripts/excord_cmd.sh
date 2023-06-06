@@ -1,4 +1,6 @@
 #!/bin/env bash
+set -o pipefail
+
 bam=$1
 fasta=$2
 output=$3

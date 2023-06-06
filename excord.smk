@@ -72,15 +72,15 @@ rule RunExcord:
     shell(
       f"""score-client --quiet download \\
           --validate false \\
-          --output-dir {config.outdir}/excord} \\
+          --output-dir {config.outdir}/excord \\
           --manifest {input.manifest}""")
 
-    # find the filename in the manifest table and change the name to the file_id
+    # find the filename in the manifest table
     bam = f'{config.outdir}/excord/{manifest_table[manifest_table.file_id == wildcards.file_id].file_name.values[0]}'
     bai = f'{bam}.bai'
 
     # run excord
-    shell(f"bash excord_cmd.sh {bam} {input.fasta} {output}")
+    shell(f"bash scripts/excord_cmd.sh {bam} {input.fasta} {output}")
 
     # remove the bams when done
     Path(bam).unlink()
