@@ -99,7 +99,7 @@ mkdir ~/bin
 wget -O ~/bin/excord https://github.com/brentp/excord/releases/download/v0.2.4/excord
 chmod +x ~/bin/excord
 echo "PATH=$PATH:~/bin" >> ~/.profile
-
+chmod +x ~/stix-pcawg-pipeline/scripts/score-client/bin/score-client
 
 
 
