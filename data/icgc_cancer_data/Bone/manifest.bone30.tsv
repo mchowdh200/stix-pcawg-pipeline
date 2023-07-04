@@ -1,0 +1,6 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI803687	84655ee9-ff18-58da-8e7f-1ae2e64ebf1f	BAM	-7cf2ebd8e80ff23ddd2f67f124dc7fb3.bam	639367804	4bc6db83dd3b81a4bfd824e0f1b77c8d	7b7b479e-b5ac-5cc8-a4c4-87d5d60622fd	DO52577	BOCA-UK	PCAWG
+aws-virginia	FI803663	9c4b250f-b87e-514f-95d7-2b7fd3c250d9	BAM	-2aaf3eee5c612b9fd1507722dcaf91ab.bam	278804292	ffe091f1714f9ce4f8b93b13bbe346f5	a07efc33-bd83-5bab-a8d4-26ea6c283087	DO52608	BOCA-UK	PCAWG
+aws-virginia	FI809765	645aa8fc-a4c8-59ed-9e19-ee3c45adbb52	BAM	-ad4aeedc224c6be5e21e26c038a43df4.bam	168187517	47fbc7def95cbfe979853a8176ba65e0	57e31d13-ae2b-5a55-92ef-b48d8d178ab4	DO52604	BOCA-UK	PCAWG
+aws-virginia	FI809737	168baaae-2b41-52ff-b215-150df34db00e	BAM	-1612f8544dc963747e394d5fac768b86.bam	232005502	dfea439cdd960bb430902f4407af2372	85725d29-ede1-566a-88c9-e96e709f26c3	DO52640	BOCA-UK	PCAWG
+aws-virginia	FI803917	cbe60b2a-f74f-585b-b2d0-597917f9b1f5	BAM	-1a4c45ba2dd127f831bb11d39497b4cd.bam	822010212	bd92e14e9f951b88080d306fc6c479cf	836b2c3d-ac5d-5ea1-8bf9-8ec28330acd0	DO52603	BOCA-UK	PCAWG
