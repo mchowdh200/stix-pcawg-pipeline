@@ -1,0 +1,6 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI6637	6e71d100-163f-53c9-8a5c-68439ccea072	BAM	966c9e57d9fcc4c4ed9cf102fe959d33.bam	120341499593	966c9e57d9fcc4c4ed9cf102fe959d33	4d65e973-227f-5b8b-8e11-b60fadb14464	DO52547	BRCA-UK	PCAWG
+aws-virginia	FI31102	5854e30d-6bc7-5312-afad-edef68662752	BAM	17a31a3deafd6aa0e119d28c8ad27b3f.bam	121557019628	17a31a3deafd6aa0e119d28c8ad27b3f	e0eb33b7-a427-522a-9a18-9e01f389eca4	DO1076	BRCA-UK	PCAWG
+aws-virginia	FI26597	cd2dfd29-fbb4-539d-aeb7-22a8e2934925	BAM	4bcf4f050a418a10e324fae4392a7ebc.bam	137563256740	4bcf4f050a418a10e324fae4392a7ebc	c22e2850-bc20-5f3e-a9ee-4f1883e86ec0	DO52546	BRCA-UK	PCAWG
+aws-virginia	FI21913	0772d030-12a2-5ff5-a1b8-a45fd51040b8	BAM	6908c9336a4de80f5f16af39da29b1e4.bam	150415924080	6908c9336a4de80f5f16af39da29b1e4	3316da46-fdec-5f00-bc3c-98750bb73433	DO1009	BRCA-UK	PCAWG
+aws-virginia	FI29510	9e71f958-a1bc-5d50-91ba-d718bdff3020	BAM	eb5f6eee937da5537ce407964e3af9f5.bam	135557333366	eb5f6eee937da5537ce407964e3af9f5	144fb8ad-295c-55ec-b39d-d36b507c266d	DO52562	BRCA-UK	PCAWG
