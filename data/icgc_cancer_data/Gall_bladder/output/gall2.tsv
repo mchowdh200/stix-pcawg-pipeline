@@ -1,0 +1,6 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI42053	fb96fd5f-5a6f-5fc7-baf9-2fd8f43591df	BAM	73c4a73954614dda9be097dfb8305bd8.bam	128476988498	73c4a73954614dda9be097dfb8305bd8	4634f96e-7e96-5c0d-9cc8-f08f9a305001	DO218440	BTCA-SG	PCAWG
+aws-virginia	FI41441	d9ddadc1-9a95-5edb-9d6c-e221c75842b5	BAM	45960bcbf9c4b164bbcb007b780ae426.bam	137943558108	45960bcbf9c4b164bbcb007b780ae426	1ff338f5-9eaa-5cee-bf5d-6381bfe02814	DO218550	BTCA-SG	PCAWG
+aws-virginia	FI5223	fdd88637-7046-5dd0-829e-42f3b3f4ddf9	BAM	49f6d0817c3e066a79031b6e75f3de1f.bam	150982087403	49f6d0817c3e066a79031b6e75f3de1f	e9fbf9ba-f37e-54fb-b2cc-464cd00fa1a1	DO217864	BTCA-SG	PCAWG
+aws-virginia	FI41442	5723733c-26b0-5354-9b5c-fa06b060aa30	BAM	051ffcb4f054cb56186501f378879bd5.bam	157397669215	051ffcb4f054cb56186501f378879bd5	4e6d5d0a-a5f7-590a-9d19-1ef4a87202a6	DO218550	BTCA-SG	PCAWG
+aws-virginia	FI3368	ccf30f0f-0ec1-5aa2-8eb3-14cb1f4f58cd	BAM	daeaabe3ad65b6b6b494caf2e280a79e.bam	176297406887	daeaabe3ad65b6b6b494caf2e280a79e	a33907a6-9112-5f17-b0b2-eb5e47f2f17b	DO217850	BTCA-SG	PCAWG
