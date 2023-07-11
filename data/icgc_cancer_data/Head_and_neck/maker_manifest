@@ -1,0 +1,38 @@
+#!/bin/bash
+
+# Define the input file path
+input_file="manifest.aws-virginia.1684874825829.tsv"
+
+# Define the output directory
+output_dir="output"
+
+# Create the output directory if it doesn't exist
+mkdir -p "$output_dir"
+
+# Define the starting row number
+start_row=2
+
+# Define the row increment value
+increment=5
+
+# Define the number of rows to display each time
+rows_to_display=5
+
+# Define a counter variable
+counter=1
+
+# Loop through the rows until row 197
+while [ $start_row -le 27 ]
+do
+  # Generate the output file name
+  output_file="$output_dir/head$counter.tsv"
+
+  # Get the header and the rows within the specified range
+  { head -n 1 "$input_file"; sed -n "${start_row},$((start_row + rows_to_display - 1))p" "$input_file"; } > "$output_file"
+
+  # Increment the row number for the next iteration
+  start_row=$((start_row + increment))
+
+  # Increment the counter
+  counter=$((counter + 1))
+done

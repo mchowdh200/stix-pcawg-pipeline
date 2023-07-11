@@ -1,0 +1,6 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI46537	eb923204-d4aa-5228-8e40-cd4e3f043ea2	BAM	84d126f4a25de2b6aec740de1e2fd999.bam	156152224254	84d126f4a25de2b6aec740de1e2fd999	ea380c4f-5e3e-50a5-a94e-d1a117d88039	DO218697	ORCA-IN	PCAWG
+aws-virginia	FI18616	e456d0a5-7de2-5462-8c44-f65c3833f023	BAM	aca28580efa612b9464734b9e6ab22fe.bam	161385225259	aca28580efa612b9464734b9e6ab22fe	3a4bf98f-cb69-5069-a779-b2f6c0f45d58	DO218012	ORCA-IN	PCAWG
+aws-virginia	FI9327	cfb773fd-77da-5695-adcc-b729f270cee8	BAM	92cb9996b5fe8bf8ec9dedf134fb64a0.bam	176437052623	92cb9996b5fe8bf8ec9dedf134fb64a0	73cb98cd-fc4a-51cd-9399-3771272f3e52	DO217950	ORCA-IN	PCAWG
+aws-virginia	FI9326	ef7adddb-a2f4-50a9-8961-14b32d91a59a	BAM	d3852abe44a3172fd193c11fe9b3084b.bam	95539179074	d3852abe44a3172fd193c11fe9b3084b	bc1ee9fd-045a-5508-936b-ed8007e74b8f	DO217950	ORCA-IN	PCAWG
+aws-virginia	FI17770	4926efce-2afd-573f-a7ae-6b068bcaefaf	BAM	2dfb6559e7f72bed806f406253eff487.bam	164394154218	2dfb6559e7f72bed806f406253eff487	bd361fae-a161-5586-9f7e-02639d4fb681	DO218075	ORCA-IN	PCAWG
