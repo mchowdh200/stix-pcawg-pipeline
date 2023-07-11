@@ -1,0 +1,6 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI52938	9ea06afa-e3dc-5ff3-b6d8-b770edfb2a2d	BAM	8804bb2a325ef56b1f981436b9789ac6.bam	175011111537	8804bb2a325ef56b1f981436b9789ac6	f308fde7-e0da-5a2d-9c30-47c97ee75aa9	DO46921	RECA-EU	PCAWG
+aws-virginia	FI20554	1e19dad5-221b-55c2-aee7-495130cfee2d	BAM	b14cfdd8175dc91390e9b27e5c47e307.bam	167046862376	b14cfdd8175dc91390e9b27e5c47e307	ab8e707a-0155-52ab-88ed-05f462d69ef9	DO47096	RECA-EU	PCAWG
+aws-virginia	FI34524	d0f812e9-c354-597b-8dd3-b85201c1d290	BAM	5587d5aa03d0dfeca236d33102cf7fe9.bam	165879723344	5587d5aa03d0dfeca236d33102cf7fe9	40543fe7-bb4a-5727-8041-a21662f7c418	DO47156	RECA-EU	PCAWG
+aws-virginia	FI48627	1c127f14-7e5d-597a-bd61-46ecea19c005	BAM	de2bd386d4169d125702ad9ff6e0975f.bam	188181224951	de2bd386d4169d125702ad9ff6e0975f	e2d46d4d-53f9-5ef2-bc3f-a741a81e7753	DO46869	RECA-EU	PCAWG
+aws-virginia	FI23462	4d334e50-ebf5-58b3-a82b-dc1d5fde44a8	BAM	fc1bb603af6e2f7cf13f5d19dbf3364a.bam	190553088336	fc1bb603af6e2f7cf13f5d19dbf3364a	4ecaf722-0223-50f8-8de4-3ca5e9073a5a	DO47150	RECA-EU	PCAWG
