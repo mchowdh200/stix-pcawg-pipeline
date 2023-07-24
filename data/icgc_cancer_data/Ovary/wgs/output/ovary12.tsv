@@ -1,0 +1,6 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI42345	26bcca36-d271-5fcc-afd0-99c10f580b8d	BAM	31bd52870c601240cb7c67544adde3cc.bam	146283753650	31bd52870c601240cb7c67544adde3cc	758f90ce-cbd9-5e44-99b5-f7d824c1be9f	DO46344	OV-AU	PCAWG
+aws-virginia	FI513	a5e30198-08bb-5120-b509-8a93d9c5440d	BAM	67c569de7bc46091b59a710323ff56c8.bam	121744033537	67c569de7bc46091b59a710323ff56c8	9101996f-fc3a-58ef-8001-08db8158375f	DO46424	OV-AU	PCAWG
+aws-virginia	FI7977	1e2dd11d-ef5d-55d9-a2f6-7e520dd58d44	BAM	a3f579fa95c5c45d0174c081d62b5cf5.bam	113021112855	a3f579fa95c5c45d0174c081d62b5cf5	aef09ad0-3619-5e79-bef7-1fc1cf7f8a2d	DO46358	OV-AU	PCAWG
+aws-virginia	FI48365	966b84d7-38bc-50d9-bcaa-e1b7f5fa39c0	BAM	c439b53742f8b249d9491d93cbaa1dd0.bam	98418597048	c439b53742f8b249d9491d93cbaa1dd0	bd1d459e-2d9c-5ecd-8a3e-a8b9106ee829	DO46542	OV-AU	PCAWG
+aws-virginia	FI28046	783450d9-6b38-5b4a-add5-6e2da081ae1a	BAM	6aa2096f5f3306a22607c9018c8be2cd.bam	116654745973	6aa2096f5f3306a22607c9018c8be2cd	8218de2e-b2ab-5516-9e87-bff0ae6cecfd	DO46551	OV-AU	PCAWG
