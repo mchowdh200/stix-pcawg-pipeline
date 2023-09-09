@@ -1,0 +1,4 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI803775	5cf2c7d7-8b17-50b6-a8bf-9010cc6bf84b	BAM	-b3e207b2752e0b2f2e9fd6878058cab9.bam	238499172	3510a2cb7c61a2c6acd0e6a48c1610b5	db53494a-478d-5b3e-9012-c14d64b86622	DO52550	BRCA-UK	PCAWG
+aws-virginia	FI804135	6cbc6335-0f99-5155-8a11-cadad761bd3e	BAM	-54e3bac37058447a7b4666d4ec4afd07.bam	260445451	e4f51e0233f1a50857f137ace9ab9de1	e67d4f25-01e2-50f1-be8c-0275a6cabfb7	DO52542	BRCA-UK	PCAWG
+aws-virginia	FI804093	2ca5410c-f3d6-53cc-83cf-6427f1e6afaa	BAM	-e06588d9bca6003c0f0ec945f109b30a.bam	247778034	de515f5ac4ef2e3597336874399f8821	bfec960d-b624-5c11-847c-722c8a7eb871	DO52561	BRCA-UK	PCAWG
