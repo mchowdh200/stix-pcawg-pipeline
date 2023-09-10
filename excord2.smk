@@ -82,7 +82,7 @@ rule RunExcord:
     #run excord
     # To handle filenames starting with "-", use "--" to indicate the end of options and the start of filenames.
     # Also, use double-quotes around filenames to handle special characters.
-    shell(f"bash scripts/excord_cmd.sh -- \"{bam}\" \"{input.fasta}\" \"{output}\"")
+    shell(f'bash scripts/excord_cmd.sh -- "{bam}" {input.fasta} {output}')
 
     # remove the bams when done
     Path(bam).unlink()
