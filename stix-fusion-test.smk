@@ -62,32 +62,22 @@ rule STIX1kgGeneQuery:
     -o {{output}}
     """
 
-
 rule STIXAggregate1kg:
   """
   For each gene, aggregate the 1kg query results to count the number of hits
   accross the 1kg population, and report the gene and total number of hits
   """
   input:
-    query_result = f'{config.outdir}/1kg_queries/{{gene}}.txt'
-  output:
-    f'{config.outdir}/1kg_agg/{{gene}}.txt'
-  shell:
-    """
-    python scripts/aggregate_1kg_query_result.py {input.query_result} {output}
-    """
-
-rule STIXCAT1kg:
-  """
-  Concatenate the 1kg aggregation results into a single file
-  """
-  input:
-    expand(f'{config.outdir}/1kg_agg/{{gene}}.txt', gene=genes)
+    query_results = f'{config.outdir}/1kg_queries' # directory of query results
   output:
     f'{config.outdir}/1kg_gene_hits.txt'
+  threads:
+    workflow.cores
   shell:
+    # runs python scripts/aggregate_1kg_query_result.py {input.query_result}
+    # in parallel with gargs
     """
-    cat {input} > {output}
+    bash scripts/aggregate_1kg_gene_queries.sh {input.query_results} {output} {threads}
     """
 
 # rule PairwiseGeneSTIXQueries:

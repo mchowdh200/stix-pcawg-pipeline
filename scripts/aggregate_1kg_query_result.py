@@ -32,7 +32,6 @@ def main():
     # split columns combined
     total_hits = (df["Pairend"] + df["Split"]).sum()
 
-    with open(output_file, "w") as f:
-        key = splitext(basename(input_file))[0]
-        f.write(f"{key}\t{total_hits}\n")
+    key = splitext(basename(input_file))[0]
+    print(f"{key}\t{total_hits}")
 
