@@ -18,7 +18,6 @@ import pandas as pd
 
 def main():
     input_file = sys.argv[1]
-    output_file = sys.argv[2]
 
     # First row is a extraneous header row, so skip it
     # The second line contains the column names
@@ -34,4 +33,7 @@ def main():
 
     key = splitext(basename(input_file))[0]
     print(f"{key}\t{total_hits}")
+
+if __name__ == "__main__":
+    main()
 
