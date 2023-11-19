@@ -34,7 +34,7 @@ genes = genes_bed["name"].tolist()
 ## RULES ======================================================================
 rule All:
   input:
-    expand(f'{config.outdir}/1kg_queries/{{gene}}.txt', gene=genes)
+    f'{config.outdir}/1kg_gene_hits.txt'
 
 rule STIX1kgGeneQuery:
   """
@@ -63,16 +63,35 @@ rule STIX1kgGeneQuery:
     """
 
 
+rule STIXAggregate1kg:
+  """
+  For each gene, aggregate the 1kg query results to count the number of hits
+  accross the 1kg population, and report the gene and total number of hits
+  """
+  input:
+    query_result = f'{config.outdir}/1kg_queries/{{gene}}.txt'
+  output:
+    f'{config.outdir}/1kg_agg/{{gene}}.txt'
+  shell:
+    """
+    python scripts/aggregate_1kg_query_result.py {input.query_result} {output}
+    """
 
-
-# rule STIXFilter1kg:
-#   pass
+rule STIXCAT1kg:
+  """
+  Concatenate the 1kg aggregation results into a single file
+  """
+  input:
+    expand(f'{config.outdir}/1kg_agg/{{gene}}.txt', gene=genes)
+  output:
+    f'{config.outdir}/1kg_gene_hits.txt'
+  shell:
+    """
+    cat {input} > {output}
+    """
 
 # rule PairwiseGeneSTIXQueries:
 #   pass
 
 # rule RankPairs
 #   pass
-
-
-
