@@ -4,5 +4,5 @@ indir=$1
 output=$2
 threads=$3
 
-ls $indir |
+find $indir -name '*.txt' |
   gargs -p $threads 'python scripts/aggregate_1kg_query_result.py {}' > $output
