@@ -1,6 +1,0 @@
-repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
-aws-virginia	FI27413	ae5488be-d50e-5b81-b238-1e1725095d67	BAM	PCAWG.de8e0f1e-f886-11e4-93ef-a770fb958afb.STAR.v1.bam	9975369143	bddcc08b3307af590a75ee408f07cfd5	47b83c2b-f1fa-5fa3-805f-55eaeb0d8f3e	DO52720	CLLE-ES	PCAWG
-aws-virginia	FI27414	cf47063e-9d7a-5b8e-b0fa-41d9500cdccc	BAM	PCAWG.de8e0f1e-f886-11e4-93ef-a770fb958afb.TopHat2.v1.bam	8414053554	3dd92cbb442499c92ef72c9323aae7c8	470c0a9d-4306-540a-9745-3915223ebff1	DO52720	CLLE-ES	PCAWG
-aws-virginia	FI11177	9c552ad8-4113-5d50-9067-f548aea4e3ee	BAM	PCAWG.e21c1878-d235-11e4-99ef-38a5fb958afb.TopHat2.v1.bam	5129222896	72f39664bb0b698df2ca29826e83ac78	d7e34a34-c4a7-5035-bfaa-aaba3fb23d9a	DO6432	CLLE-ES	PCAWG
-aws-virginia	FI24412	6bf4dce3-1398-5acb-914d-dddb4854ebad	BAM	PCAWG.f46d3c88-f895-11e4-825e-97adfb958afb.TopHat2.v1.bam	16931337741	82debe2ea68b022881844a775ed2015f	48aebc6d-a702-5260-97e9-698a24154064	DO52706	CLLE-ES	PCAWG
-aws-virginia	FI24471	47b167a9-4fd2-50b6-a47b-2bf1d6a0496f	BAM	PCAWG.a64a4582-d22a-11e4-8b5e-4985fb958afb.STAR.v1.bam	11481638734	fec99d4097ac766edc3c556f0a16faa3	daae1167-ea10-5400-a604-bee20829b71e	DO7136	CLLE-ES	PCAWG
