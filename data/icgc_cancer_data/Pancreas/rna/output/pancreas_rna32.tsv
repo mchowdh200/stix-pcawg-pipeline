@@ -1,0 +1,2 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI658705	a1d602de-1b30-5fb0-ae14-d24e833ecf34	BAM	PCAWG.b4eb3102-d015-4112-a3f6-f5f754c7ee73.STAR.v1.bam	14593657453	a1c650dc1cdb5ce4e44a64229a40225d	6901c1f2-9414-55df-a8ad-7bf3bca248a2	DO33200	PACA-AU	PCAWG
