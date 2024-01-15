@@ -1,0 +1,6 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI27681	eeb3fade-cf1b-52f8-b006-9c7fa0c241d4	BAM	PCAWG.9aec9782-e1fa-11e4-af01-35e7cdbd61e0.TopHat2.v1.bam	6351088518	939396bf5c0722ea39e01e2d05d024e6	fe814530-1294-55df-9301-52f08a0de0e9	DO45231	LIRI-JP	PCAWG
+aws-virginia	FI6390	53e50a31-0243-519c-b472-8e0aeefaeb60	BAM	PCAWG.982660a8-e1fc-11e4-ad44-73f0cdbd61e0.TopHat2.v1.bam	5064011842	199613649ceb8aae622769c41fd5cdc7	2bb5fac4-10b0-505d-8eb1-f712f14383e2	DO45091	LIRI-JP	PCAWG
+aws-virginia	FI5604	36e94326-8f94-528a-a34c-cdee2643777e	BAM	PCAWG.542faa68-e1f6-11e4-8341-933c1d39b151.TopHat2.v1.bam	5304559582	1c71fbbf934e83f6cfe81e43cb4f3363	ca960921-1a4b-501c-98a6-daf6dc48ef46	DO45161	LIRI-JP	PCAWG
+aws-virginia	FI5582	592cf8f8-0c1f-51dd-8d59-0f1a4c6d09ab	BAM	PCAWG.0571951e-e203-11e4-9a2b-13ff4a963160.STAR.v1.bam	9648595675	6cc3be61f33d5250ef95cf8115ce63ae	c4b8384b-6ad5-5d40-9c8e-4917a3dee270	DO45169	LIRI-JP	PCAWG
+aws-virginia	FI51060	955dae0e-1d47-535a-a493-a4cba9f9d4de	BAM	PCAWG.ee00c91e-e1fc-11e4-a8fa-15059f91f09a.STAR.v1.bam	6126110592	eab77ada84b2fc32bab1d2c06e6200b7	486b442c-cfd2-5f05-ba2c-9839dd340d12	DO45101	LIRI-JP	PCAWG
