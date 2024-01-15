@@ -1,0 +1,5 @@
+repo_code	file_id	object_id	file_format	file_name	file_size	md5_sum	index_object_id	donor_id/donor_count	project_id/project_count	study
+aws-virginia	FI658763	14f6b6fe-2585-56ba-a847-4a6e7668e833	BAM	PCAWG.ef81bfe0-5096-42fe-865e-dbb9df0c4b88.STAR.v1.bam	951957487	63f4828431ce3de9d5fc579baa287037	8607c86b-6554-5639-828d-9a105836caeb	DO50311	ESAD-UK	PCAWG
+aws-virginia	FI659025	bc812022-7d56-5471-abd6-ee4d64d5eecd	BAM	PCAWG.1be40c18-042c-43b0-b663-130a88a257bd.STAR.v1.bam	779824921	054a741e763ef151ad8a5ed1ee107dcf	2ec60cb8-a92c-5ae8-a498-6da5d1a0619f	DO50453	ESAD-UK	PCAWG
+aws-virginia	FI659329	f49aac81-77c7-506c-a33c-85ea9bddce28	BAM	PCAWG.7d1f5c61-5f71-406e-a191-7c4d26896662.STAR.v1.bam	810976081	15f710367e469bee10ef4b5102018410	796b47e6-ed62-55d3-9dab-d0f05bb14509	DO50446	ESAD-UK	PCAWG
+aws-virginia	FI658969	6d5eb054-2caa-5b59-8ec0-74847bda1e14	BAM	PCAWG.d1863c26-1ff2-4a68-bb0c-db5dca2c5b5c.TopHat2.v1.bam	835168392	c403ec701cd5942b142ebe09932a0d89	fac57924-c77d-59f7-84d1-69f67e667065	DO50364	ESAD-UK	PCAWG
